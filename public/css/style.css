@@ -1,0 +1,224 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+:root{
+  --theme: 181, 88, 252;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  overflow-y: hidden;
+}
+
+.center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  border: 1px solid #a12dfa;
+  background: white;
+  box-shadow: 3px 3px 1px #730ba3;
+  padding: 7px 15px;
+  font-size: 1em;
+	outline: none;
+}
+
+.btn:active {
+  margin-right: -1px;
+  box-shadow: none;
+}
+
+.start {
+  z-index: 4;
+  background-image: url("https://previews.123rf.com/images/expressvectors/expressvectors1601/expressvectors160100041/50371741-color-pattern-a-seamless-polka-dot-background.jpg");
+}
+
+.header {
+  background-color: white;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 3px 1px #730ba3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  margin-right: auto; 
+	margin-left: 5px;
+	height: 85%;
+}
+
+.fa {
+  margin-right: 10px;
+  color: #454444;
+}
+
+.btn-connect {
+  font-weight: bold;
+}
+
+#title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 2px 2px 1px #912dbf;
+	color: #ff5e5e;
+}
+
+/*---------------------------------*/
+
+.loading {
+  background-color: rgba(var(--theme), 0.8);
+  z-index: 3;
+  perspective: 400px;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  margin-bottom: 30px;
+  animation: load 1s infinite;
+}
+
+.loader-text {
+  color: white;
+  text-align: center;
+}
+
+@keyframes load {
+  from {
+    transform: rotateY(0);
+  }
+  
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+/*---------------------------------*/
+
+.chat {
+  z-index: 2;
+  background-color: white;
+  
+}
+
+.navbar {
+  background-color: rgb(var(--theme));
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat-box{
+  padding: 10px 5px;
+  height: calc(100vh - 115px);
+  overflow-y: scroll;
+}
+
+.chat-box::-webkit-scrollbar{
+  width: 7px;
+}
+
+.chat-box::-webkit-scrollbar-thumb{
+  background-color: rgba(var(--theme), 0.3);
+  border-radius: 10px;
+}
+
+.hint {
+	text-align: center;
+	color: #7a787a;
+	margin: 10px 0px;
+}
+
+.hint-first {
+	margin-top: 0px !important;
+}
+
+.msg {
+  display: block;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-friend, .msg-own {
+  display: inline-block;
+  max-width: 200px;
+  overflow-wrap: break-word;
+  padding: 10px 20px;
+}
+
+.msg-friend {
+  background-color: #e3e3e3;
+  align-self: flex-start;
+}
+
+.msg-own {
+  background-color: rgb(var(--theme));
+  align-self: flex-end;
+  color: white;
+}
+
+.chat-form {
+	background: white;
+  height: 60px;
+  width: 100%;
+  padding: 12px;
+  border-top: 1px solid #c4b9c7;
+  position: absolute;
+  bottom: 0;
+}
+
+.chat-form-input {
+  height: 35px;
+  width: calc(100% - 10px - 100px + 4px);
+  font-size: 1em;
+	outline: none;
+	padding: 0 5px;
+}
+
+.chat-form-send {
+  height: 35px;
+  width: 100px;
+  border: none;
+  font-size: 1em;
+  background-color: rgb(var(--theme));
+  color: white;
+  margin-left: -4px;
+	outline: none;
+}
+
+/*---------------------------*/
+
+
+
+
+
+
+
